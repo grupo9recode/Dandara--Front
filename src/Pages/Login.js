@@ -48,7 +48,7 @@ const Login = () => {
         <>
             <Menu/>
             
-            return (
+            
         <div> 
            <div className="container container-fluid  d-flex mt-6 mb-6 contato">
             <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
@@ -71,8 +71,8 @@ const Login = () => {
          <div className="Contato-screen-body">
            <div className="Contato-screen-body-item left">
              <div className="Contato-app-title">
-               <span>Duvidas?</span>
-               <span>chama no zap!</span>
+               <span>Faça o</span>
+               <span>Login!</span>
              </div>
              <div id="alternativeLogin">
                    <div id="iconGroup">
@@ -81,7 +81,7 @@ const Login = () => {
                     {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                 </div>
                 <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
-                <a href="/RecuperarSenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
+                <a href="./RecuperarSenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
                             <a href="/Cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
                 </div>
            </div>
@@ -95,8 +95,8 @@ const Login = () => {
                </div> 
                
                <div className="Contato-app-form-group buttons">
-                 <button onClick={validar}className="Contato-app-form-button">APAGAR</button>
-                 <button onClick={validar} className="Contato-app-form-button">ENVIAR</button>
+                 <button  onClick={validar}className="Contato-app-form-button">APAGAR</button>
+                 <button href="./MinhaConta" onClick={validar} className="Contato-app-form-button">ENVIAR</button>
                </div>
              </div>
            </div>

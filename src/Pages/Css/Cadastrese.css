@@ -4,7 +4,7 @@
 }*/
 
 .container{
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 200px;
   }
   
@@ -12,6 +12,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
   }
   
   .Contato-body, button, input {
@@ -22,8 +23,8 @@
   
   .ContatoBackground {
     display: flex;
-    min-height: 100vh;
-    margin-left: -200px;
+    min-height: 50vh;
+  
   }
   
   .ContatoContainer {
@@ -31,12 +32,16 @@
   margin-top: 0px;
     padding: 5px;
     width: 100%;
+    margin-top: -440px;
+    
   }
   
   .ContatoScreen {
     position: relative;
     background: linear-gradient(to top, #e451d0fa 10%, #e04949 100%);
     border-radius: 20px;
+    
+   
   }
   
   .screen:after {
@@ -63,6 +68,7 @@
   
   .Contato-Screen-header-left {
     margin-right: auto;
+    
   }
   
   .Contato-Screen-header-button {
@@ -91,11 +97,13 @@
   
   .Contato-screen-body {
     display:flex;
+  
   }
   
   .Contato-screen-body-item {
     flex: 1;
     padding: 50px;
+  
   }
   
   .Contato-screen-body-item.left {

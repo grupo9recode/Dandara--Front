@@ -7,12 +7,13 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp} from 'react-icons/fi';
 
 
 const Cadastrese = () => {
-    const url = "http://localhost:3005/cadastrese";
+    const url = "http://localhost:3005/Cadastrese";
     const [form, setForm] = React.useState({
         
         id_usuario: "",
         nome: "",
         cpf: "",
+        nis: "",
         celular: "",
         email: "",
         senha: ""
@@ -27,7 +28,7 @@ const Cadastrese = () => {
     }
 
     function pegarDados(event) {
-        fetch('http://localhost:3005/cadastrese', {
+        fetch('http://localhost:3005/Cadastrese', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -50,18 +51,9 @@ const Cadastrese = () => {
         
             <Menu/>
             <div> 
-           <div className="container container-fluid  d-flex mt-6 mb-6 contato">
-            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
-                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
-                    <div className="form-icon">
-                        <span><RiContactsBookUploadLine/></span>
-                    </div>
-                </div>
-                </div>     
-                          
-                
-                   
-<div><div className="ContatoBackground">
+           
+                  
+      <div><div className="ContatoBackground">
      <div className="ContatoContainer">
        <div className="ContatoScreen">
          <div className="Contato-Screen-header">
@@ -79,8 +71,8 @@ const Cadastrese = () => {
          <div className="Contato-screen-body">
            <div className="Contato-screen-body-item left">
              <div className="Contato-app-title">
-               <span>Duvidas?</span>
-               <span>chama no zap!</span>
+               <span>Faça o</span>
+               <span>CADASTRO!</span>
              </div>
              <div id="alternativeLogin">
                    <div id="iconGroup">
@@ -89,30 +81,52 @@ const Cadastrese = () => {
                     {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                 </div>
                 <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
+                <a href="./Login" className="nav-link text-dark btn font-weight-bold">Faça o login</a>
+                            
                 </div>
            </div>
            <div className="Contato-screen-body-item">
              <div className="Contato-app-form">
                <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="NAME" value="nome"></input>
+                 <input className="Contato-app-form-control" placeholder="UserName"></input>
                </div>
-               <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="EMAIL"></input>
-               </div>
+
                <div className="Contato-app-form-group message">
-                <input className="Contato-app-form-control" placeholder="mensagem"></input>
+                <input type="Ttext" className="Contato-app-form-control" placeholder="Nome"></input>
                </div> 
+
+               <div className="Contato-app-form-group message">
+                <input type="number" className="Contato-app-form-control" placeholder="CPF"></input>
+               </div> 
+
+               <div className="Contato-app-form-group message">
+                <input type="number" className="Contato-app-form-control" placeholder="Número do Nis"></input>
+               </div> 
+
+               <div className="Contato-app-form-group message">
+                <input type="number" className="Contato-app-form-control" placeholder="Celular"></input>
+               </div> 
+               
+               <div className="Contato-app-form-group message">
+                <input type="text" className="Contato-app-form-control" placeholder="Email"></input>
+               </div> 
+
+               <div className="Contato-app-form-group message">
+                <input type="password" className="Contato-app-form-control" placeholder="Senha"></input>
+               </div> 
+               
                <div className="Contato-app-form-group buttons">
                  <button className="Contato-app-form-button">APAGAR</button>
-                 <button className="Contato-app-form-button">ENVIAR</button>
+                 <button href="./MinhaConta"  className="Contato-app-form-button">ENVIAR</button>
                </div>
              </div>
            </div>
          </div>
        </div>
      
-       </div>
+       
      </div>
+   </div>
    </div>
     
                 </div>
