@@ -1,0 +1,84 @@
+.menu-container{
+    background-color: beige;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    box-shadow: 1px 5px 10px rgba(214, 114, 114, 0.294);
+    height: 80px;
+   
+}
+
+
+.icons{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+@media(min-width:700px){
+    .menu-links{
+        justify-content: center;
+    align-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: larger;
+    background-color: beige;
+    background-size: 50px;
+    }
+   
+
+    
+}
+
+ .navbar-toggler-icon{
+
+        background-image: url("../../Imagens/menuFechado.png");
+        width: 50px;
+        height: 50px;
+        margin: 5px;       
+       
+      
+    }
+
+
+
+.CadastreseBtn{
+
+    background: none;
+    background-size: 100%;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px  #3a3b42;
+    cursor: pointer;
+    outline: none;
+}
+
+.LoginBtn{
+
+    background: none;
+    background-size: auto;
+
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px  #3a3b42;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-link{
+
+    background: none;
+    background-size: auto;
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px  #3a3b42;
+    cursor: pointer;
+    outline: none;
+
+}
