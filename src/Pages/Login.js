@@ -2,7 +2,9 @@ import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
 import React from 'react'
 import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
-import {TiFlowChildren} from 'react-icons/ti';
+import {RiContactsBookUploadLine} from 'react-icons/ri'
+import { FiInstagram, FiFacebook,AiOutlineWhatsApp } from 'react-icons/fi';
+
 
 const Login = () => {
     
@@ -46,34 +48,67 @@ const Login = () => {
         <>
             <Menu/>
             
-            <div className="container container-fluid  d-flex mt-6 mb-6  menu">
-            <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300" className='imagem-contato mr-auto'/></a>
-                <div className="p-3 border mt-3 menu bg-white mb-3 ml-auto mr-auto ">
-                    <div className="form-icon">
-                        <span><TiFlowChildren/></span>
-                    </div>
-                <form action='' method='get' >
-                    <div className="mb-3">
-                        <label for="email" className="form-label text-dark font-weight-bold">Email</label>
-                        <input type="email" className="form-control" id="email" name="email" />
-                    </div>
-                    <div className="mb-3">
-                        <label for="senha" className="form-label text-dark font-weight-bold">Senha</label>
-                        <input type="password" className="form-control" id="senha" name="senha" />
-                    </div>
-                    <div className="mb-3 d-flex">
-                        <div>
-                            <a href="/esqueciminhasenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
-                            <a href="/cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
-                        </div>
-                        <div className="ml-auto mt-4">
-                                <button type="submit" onClick={validar} className="btn botao text-white font-weight-bold">ENTRAR</button>
-                        </div>   
-                    </div>
-                    </form>
-                    
+            return (
+        <div> 
+           <div className="container container-fluid  d-flex mt-6 mb-6 contato">
+            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
+                  
+<div><div className="ContatoBackground">
+     <div className="ContatoContainer">
+       <div className="ContatoScreen">
+         <div className="Contato-Screen-header">
+           <div className="Contato-Screen-header-left">
+             <div className="Contato-Screen-header-button close"></div>
+             <div className="Contato-Screen-header-button maximize"></div>
+             <div className="Contato-Screen-header-button minimize"></div>
+           </div>
+           <div className="Contato-Screen-header-right">
+             <div className="Contato-Screen-header-ellipsis"></div>
+             <div className="Contato-Screen-header-ellipsis"></div>
+             <div className="Contato-Screen-header-ellipsis"></div>
+           </div>
+         </div>
+         <div className="Contato-screen-body">
+           <div className="Contato-screen-body-item left">
+             <div className="Contato-app-title">
+               <span>Duvidas?</span>
+               <span>chama no zap!</span>
+             </div>
+             <div id="alternativeLogin">
+                   <div id="iconGroup">
+                    <a href='https://www.facebook.com/'><FiFacebook className="icon" /> </a><br/>
+                    <a href='https://www.instagram.com/'><FiInstagram className='icon'/> </a><br/>
+                    {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                 </div>
-            </div>
+                <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
+                <a href="/RecuperarSenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
+                            <a href="/Cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
+                </div>
+           </div>
+           <div className="Contato-screen-body-item">
+             <div className="Contato-app-form">
+               <div className="Contato-app-form-group">
+                 <input className="Contato-app-form-control" placeholder="E-mail"></input>
+               </div>
+               <div className="Contato-app-form-group message">
+                <input type="password" className="Contato-app-form-control" placeholder="Senha"></input>
+               </div> 
+               
+               <div className="Contato-app-form-group buttons">
+                 <button onClick={validar}className="Contato-app-form-button">APAGAR</button>
+                 <button onClick={validar} className="Contato-app-form-button">ENVIAR</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     
+       </div>
+     </div>
+   </div>
+   </div>
+    
+                </div>
             <RodapeGeral/>
         </>
     )

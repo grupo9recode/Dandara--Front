@@ -2,6 +2,8 @@ import Menu from "../Componentes/Menu/Menu";
 import React from 'react';
 import {BiBriefcase} from 'react-icons/bi';
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
+import {RiContactsBookUploadLine} from 'react-icons/ri'
+import { FiInstagram, FiFacebook, AiOutlineWhatsApp} from 'react-icons/fi';
 
 
 const Cadastrese = () => {
@@ -47,45 +49,73 @@ const Cadastrese = () => {
         <>
         
             <Menu/>
-            <div className='container bgCadastrese'>
-                <div class="registration-form mx-auto">
-                    <form action="/login" className="form-group" onSubmit={pegarDados}>
-                        <div className="form-icon">
-                            <span><BiBriefcase/></span>
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME</label>
-                            <input type="text" className="form-control" id="id_usuario" name="id_usuario" placeholder=" @Exemplo" value={form.id_usuario} onChange={pegarInfo} />
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">NOME</label>
-                            <input type="text" className="form-control" id="nome" name="nome"  value={form.nome} onChange={pegarInfo} />
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">CPF</label>
-                            <input type="number" className="form-control" id="cpf" name="cpf" value={form.cpf} onChange={pegarInfo} />
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">CELULAR</label>
-                            <input type="text" className="form-control" id="celular" name="celular" value={form.celular} onChange={pegarInfo} />
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">EMAIL</label>
-                            <input type="text" className="form-control" id="email" name="email" value={form.email} onChange={pegarInfo} />
-                        </div>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">SENHA</label>
-                            <input type="password" className="form-control" id="senha" name="senha" value={form.senha} onChange={pegarInfo} />
-                        </div>
-                        <div className="form-group">
-                            <button type="submit" className="btn btn-block create-account" onClick={Enviar}>Cadastrar</button>
-                        </div>
-                    </form>
-                    <div className="social-media">    
-                        {/* null */}  
+            <div> 
+           <div className="container container-fluid  d-flex mt-6 mb-6 contato">
+            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
+                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
+                    <div className="form-icon">
+                        <span><RiContactsBookUploadLine/></span>
                     </div>
                 </div>
-            </div>
+                </div>     
+                          
+                
+                   
+<div><div className="ContatoBackground">
+     <div className="ContatoContainer">
+       <div className="ContatoScreen">
+         <div className="Contato-Screen-header">
+           <div className="Contato-Screen-header-left">
+             <div className="Contato-Screen-header-button close"></div>
+             <div className="Contato-Screen-header-button maximize"></div>
+             <div className="Contato-Screen-header-button minimize"></div>
+           </div>
+           <div className="Contato-Screen-header-right">
+             <div className="Contato-Screen-header-ellipsis"></div>
+             <div className="Contato-Screen-header-ellipsis"></div>
+             <div className="Contato-Screen-header-ellipsis"></div>
+           </div>
+         </div>
+         <div className="Contato-screen-body">
+           <div className="Contato-screen-body-item left">
+             <div className="Contato-app-title">
+               <span>Duvidas?</span>
+               <span>chama no zap!</span>
+             </div>
+             <div id="alternativeLogin">
+                   <div id="iconGroup">
+                    <a href='https://www.facebook.com/'><FiFacebook className="icon" /> </a><br/>
+                    <a href='https://www.instagram.com/'><FiInstagram className='icon'/> </a><br/>
+                    {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
+                </div>
+                <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
+                </div>
+           </div>
+           <div className="Contato-screen-body-item">
+             <div className="Contato-app-form">
+               <div className="Contato-app-form-group">
+                 <input className="Contato-app-form-control" placeholder="NAME" value="nome"></input>
+               </div>
+               <div className="Contato-app-form-group">
+                 <input className="Contato-app-form-control" placeholder="EMAIL"></input>
+               </div>
+               <div className="Contato-app-form-group message">
+                <input className="Contato-app-form-control" placeholder="mensagem"></input>
+               </div> 
+               <div className="Contato-app-form-group buttons">
+                 <button className="Contato-app-form-button">APAGAR</button>
+                 <button className="Contato-app-form-button">ENVIAR</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     
+       </div>
+     </div>
+   </div>
+    
+                </div>
             <RodapeGeral/>
         </>
     )
