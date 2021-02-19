@@ -19,17 +19,17 @@ const Cadastrese = () => {
     senha: ""
   });
 
-  /*
+  
   const [response, setResponse] = React.useState(null)
 
-  function pegarInfo({ target }) {
+  /*function pegarInfo({ target }) {
       const { id, value } = target
       setForm({ ...form, [id]: value })
       console.log({ [id]: value });
   }
-
+*/
   function pegarDados(event) {
-      fetch('http://localhost:3005/Cadastrese', {
+      fetch('http://localhost:3050/usuarios/registro', {
           method: "POST",
           headers: {
               "Content-Type": "application/json"
@@ -41,7 +41,7 @@ const Cadastrese = () => {
       })
   }
 
-  const Enviar = () => {
+  /*const Enviar = () => {
       if (alert("Cadastro feito!")) {
           window.location.href='/login';
       }
@@ -87,7 +87,7 @@ const Cadastrese = () => {
                   </div>
                 </div>
 
-                <form action="http://localhost:3050/usuarios/registro" method="post">
+                <form action="/login" method="post">
                   <div className="Contato-screen-body-item">
                     <div className="Contato-app-form">
                       <div className="Contato-app-form-group">
