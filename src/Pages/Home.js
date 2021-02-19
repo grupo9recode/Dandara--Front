@@ -36,8 +36,8 @@ function Home() {
 <div class>
 <div className="content-wrapper">
     <div className="content">
-        <h2 class="content-head is-center">SOBRE O PROJETO
-        <a ><img src={require('../Imagens/favela.png').default} class="img-fluid" alt="Imagem responsiva" width="100%" /></a></h2>
+        <h2 className="content-head is-center">SOBRE O PROJETO
+        <a ><img src={require('../Imagens/favela.png').default} className="img-fluid" alt="Imagem responsiva" width="100%" /></a></h2>
 
         <div className="pure-g">
             <div className="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
@@ -58,12 +58,12 @@ function Home() {
         </div>
         <div className="pure-1 pure-u-md-1-2 pure-u-lg-3-5">
 
-        <a ><img src={require('../Imagens/comofunciona.png').default} id="img2"class="img-fluid" alt="Imagem responsiva" width="auto" /></a>
+        <a ><img src={require('../Imagens/comofunciona.png').default} id="img2"className="img-fluid" alt="Imagem responsiva" width="auto" /></a>
    </div>
-            <div class="container">
+            <div className="container">
    
-        <h2 class="content-head-2 is-center">PRA QUEM É?
-        <a ><img src={require('../Imagens/QUEM.PNG').default} id="img2"class="img-fluid" alt="Imagem responsiva" width="130%" /></a></h2>
+        <h2 className="content-head-2 is-center">PRA QUEM É?
+        <a ><img src={require('../Imagens/QUEM.PNG').default} id="img2"className="img-fluid" alt="Imagem responsiva" width="130%" /></a></h2>
         <div className="pure-g">
             <div className="box2 pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
             <p className="mt-4">Mães solo negras das periferias brasileiras são o foco de nossa atividade, e isso se justifica: segundo a reportagem <a href="http://www.generonumero.media/retrato-das-maes-solo-na-pandemia/">generonumero.media/retrato-das-maes-solo-na-pandemia</a>, 61% das famílias monoparentais são chefiadas por mães solo negras. Como fica evidente, o racismo estrutural também apresenta consequências no âmbito da formação familiar. </p> 

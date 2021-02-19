@@ -283,6 +283,10 @@ hr{
   .ContatoBackground {
     display: flex;
     min-height: 0px;
+    background-color: #5a62d6;
+    margin-top: 20px;
+    margin-bottom: none;
+    padding-bottom: 0%;
   }
   
   .ContatoContainer {
@@ -354,7 +358,11 @@ hr{
   
   .Contato-screen-body-item {
     flex: 1;
-    padding: 50px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
   }
   
   .Contato-screen-body-item.left {
@@ -369,18 +377,11 @@ hr{
     color: #727aeb;
     font-size: 45px;
     text-align: center;
+
+
   }
   
-  .Contato-app-title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 25px;
-    bottom: 160px;
-    width: 25px;
-    height: 4px;
-    background: #727aeb;
-  }
+ 
   
   .Contato-app-contact {
     margin-top: auto;
@@ -459,12 +460,10 @@ hr{
     }
   
     .Contato-app-title span {
-      margin-right: 12px;
+      margin-right: 6px;
     }
   
-    .Contato-app-title:after {
-      display: none;
-    }
+    
   }
   
   @media screen and (max-width: 600px) {
@@ -492,6 +491,21 @@ hr{
   
   #alternativeLogin {
      text-align: center;
-     padding-top: 2rem;
-     margin-top: 10px;
+    
+     margin-top: 5px;
   }
+
+  .Imgcontato{
+   
+ padding-top: 50px;
+    align-self: center;
+    margin-top: -170px;
+    margin-left: 25%;
+    padding-top: 50px;
+    }
+.ContatoCompleto{
+
+  width: 100%;
+
+  background-color: #5a62d6;
+}

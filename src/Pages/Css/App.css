@@ -1,5 +1,5 @@
 body{
-    background-color:#ebc7b2;
+    background:radial-gradient( #f08e81 40%, #ff7765 100%);
     
 }
 
@@ -8,4 +8,6 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
 }
