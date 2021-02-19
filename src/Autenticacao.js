@@ -1,7 +1,5 @@
-
-/*
 function Autenticacao() {
-    if (JSON.parse(localStorage.getItem('key')) === true) {
+    if (JSON.parse(localStorage.getItem('id')) === true) {
         return true
     }
     else {
@@ -9,4 +7,5 @@ function Autenticacao() {
     }
 };
 
-export default Autenticacao;*/
+export default Autenticacao;
+

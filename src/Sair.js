@@ -1,6 +1,6 @@
 
 const Sair = () => {
-    window.location.href='http://localhost:3050/logout';
+    window.location.href='http://localhost:3000';
 };
 
 export default Sair;
