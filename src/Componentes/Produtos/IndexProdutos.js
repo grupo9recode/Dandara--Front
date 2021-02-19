@@ -26,6 +26,7 @@ const IndexProduto = (props)=>{
     
     
     
+    
     /*function deletar(){
         alert("Deletado com sucesso!")
        
@@ -45,9 +46,8 @@ const IndexProduto = (props)=>{
                             <h4 className="textH4">Para mais informações, clique no círculo do card.</h4>
 
                             <div className='container container-fluid d-flex justify-content-around'>
-                            {Autenticacao() ? <button className= "btnServicoDeletar" type="submit"  onClick={deletar}>Deletar</button>: <></>}
-
-                        <button className="btnProduto" type="button">Contato</button>
+                            {Autenticacao() ?<button className= "btnServicoDeletar" type="submit"  onClick={deletar}>Deletar</button>: <></>}
+                           <a href={'http://localhost:3050/admin/produtos/'+props.id}><button className="btnProduto" type="submit" >Editar</button></a>
                     </div>
                         </div>
                         <div className="description">
