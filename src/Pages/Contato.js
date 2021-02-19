@@ -48,23 +48,25 @@ const Contato = () => {
                 <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
                 </div>
            </div>
+           <form action="" method="post">
            <div className="Contato-screen-body-item">
              <div className="Contato-app-form">
                <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="NAME" value="nome"></input>
+                 <input className="Contato-app-form-control" placeholder="NAME" value="nome" name="nome"></input>
                </div>
                <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="EMAIL"></input>
+                 <input className="Contato-app-form-control" placeholder="EMAIL" name="email"></input>
                </div>
                <div className="Contato-app-form-group message">
-                <input className="Contato-app-form-control" placeholder="mensagem"></input>
+                <input className="Contato-app-form-control" placeholder="mensagem" name="mensagem"></input>
                </div> 
                <div className="Contato-app-form-group buttons">
                  <button className="Contato-app-form-button">APAGAR</button>
-                 <button className="Contato-app-form-button">ENVIAR</button>
+                 <button type="submit" className="Contato-app-form-button">ENVIAR</button>
                </div>
              </div>
            </div>
+           </form>
          </div>
        </div>
      
