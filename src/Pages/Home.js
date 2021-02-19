@@ -1,10 +1,10 @@
-import Menu from "../Componentes/Menu/Menu";
+import MenuAberto from "../Componentes/Menu/MenuAberto";
 import './Css/Home.css';
 import Rodape from '../Componentes/Rodape/RodapeGeral'
 function Home() {
     return (
         <>
-            <Menu />
+            <MenuAberto />
 
             
             <div> 

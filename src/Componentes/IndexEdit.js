@@ -1,27 +1,13 @@
-import Menu from "../Componentes/Menu/Menu";
-import './Css/CadastrarProdutos.css';
-//import Rodape from '../Componentes/Rodape/Rodape';
+//import './IndexProdutos.css';
 import React from 'react';
+import { BsInfoCircleFill } from "react-icons/bs";
+//import Autenticacao from '../../Autenticacao';
+import { MdHttp } from 'react-icons/md';
 import {BiStore} from 'react-icons/bi';
 
-export default function CadastrarProdutos() {
-
-   /* const Categoria = () => {
-
-        const [action, setAction] = React.useState('');
-        
-        React.useEffect(async()=>{
+const IndexEdit = (props)=>{
     
-            const urli= await fetch('http://localhost:3050/admin/categorias');    
-            const urlResponse = await url.json();
-    
-            setAction(urlResponse);
-            console.log(actionz);
-        }, []);
-
-    }*/
-    
-    const url = "http://localhost:3050/admin/produtos/cad";
+    const url = `http://localhost:3050/admin/produtos/${props.id}`;
     const [form, setForm] = React.useState({
 
         username: "",
@@ -41,8 +27,8 @@ export default function CadastrarProdutos() {
 
 
     function enviarDados(event) {
-        fetch('http://localhost:3050/admin/produtos/cad', {
-            method: "POST",
+        fetch(`http://localhost:3050/admin/produtos/${props.id}`, {
+            method: "PUT",
             enctype:'multipart/form-data',
             headers: {
                 "Content-Type": "application/json"
@@ -53,11 +39,9 @@ export default function CadastrarProdutos() {
             setResponse(res);
         })
     }
-
-    return (
-        <>
-            <Menu />
-            <div className='container'>
+    return(
+        <>         
+             <div className='container'>
                 <div class="registration-form">
                     <form action="/produtos" className="form-group" onSubmit={enviarDados}>
                         <div className="form-icon">
@@ -65,11 +49,11 @@ export default function CadastrarProdutos() {
                         </div>
                         <div className="mb-3">
                             <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME DE CADASTRO</label>
-                            <input type="text" className="form-control" id="username" name="username" placeholder=" @EXEMPLO" value={form.username} onChange={pegarDados} />
+                            <input type="text" className="form-control" id="username" name="username" placeholder={props.username} value={form.username} onChange={pegarDados} />
                         </div>
                         <div className="mb-3">
                             <label for="nome" className="form-label text-dark font-weight-bold">PRODUTOS</label>
-                            <input type="text" className="form-control" id="produto" name="produto" placeholder="NOME DO PRODUTO" value={form.produto} onChange={pegarDados} />
+                            <input type="text" className="form-control" id="produto" name="produto" placeholder={props.produto} value={form.produto} onChange={pegarDados} />
                         </div>
                 
                         <div className="mb-3">
@@ -97,17 +81,17 @@ export default function CadastrarProdutos() {
                         </div>
                         <div className="mb-3">
                             <div className="input-group mb-3">
-                                <input type="text" name="valor" id="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={pegarDados} />
+                                <input type="text" name="valor" id="valor" className="form-control" placeholder={props.valor} aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={pegarDados} />
                                 <span className="input-group-text" id="basic-addon1">$</span>
                             </div>
                         </div>
                         <div className="mb-3">
                             <div className="form-floating">
-                                <textarea className="form-control textarea" name="descricao" id="descricao" placeholder="DESCRIÇÃO DO PRODUTO" value={form.descricao} onChange={pegarDados}></textarea>
+                                <textarea className="form-control textarea" name="descricao" id="descricao" placeholder={props.descricao} value={form.descricao} onChange={pegarDados}></textarea>
                             </div>
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-block create-account fundoBotao">Cadastrar Produto</button>
+                            <button type="submit" className="btn btn-block create-account fundoBotao">Editar Produto</button>
                         </div>
                     </form>
                     <div className="social-media">    
@@ -115,6 +99,9 @@ export default function CadastrarProdutos() {
                     </div>
                 </div>
             </div>       
+                        
         </>
-    )
+    );
 }
+
+export default IndexEdit;

@@ -1,4 +1,4 @@
-import Menu from '../Componentes/Menu/Menu';
+import MenuFechado from '../Componentes/Menu/MenuFechado';
 import './Css/MinhaConta.css'
 import Sair from '../Sair'
 import {BsPersonSquare} from 'react-icons/bs';
@@ -8,7 +8,7 @@ import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 const MinhaConta = () => {
     return (
         <>
-            <Menu />
+            <MenuFechado />
 
             <div className="container mb-5">
                 <div className="row d-flex justify-content-center m-1">
