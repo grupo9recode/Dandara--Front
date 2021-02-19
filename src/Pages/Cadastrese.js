@@ -2,7 +2,8 @@ import MenuAberto from "../Componentes/Menu/MenuAberto";
 import React from 'react';
 import { BiBriefcase } from 'react-icons/bi';
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
-import { RiContactsBookUploadLine } from 'react-icons/ri'
+import { RiContactsBookUploadLine } from 'react-icons/ri';
+import './Css/Cadastrese.css'
 import { FiInstagram, FiFacebook, AiOutlineWhatsApp } from 'react-icons/fi';
 
 
@@ -54,24 +55,24 @@ const Cadastrese = () => {
       <div>
 
 
-        <div><div className="ContatoBackground">
-          <div className="ContatoContainer">
-            <div className="ContatoScreen">
-              <div className="Contato-Screen-header">
-                <div className="Contato-Screen-header-left">
-                  <div className="Contato-Screen-header-button close"></div>
-                  <div className="Contato-Screen-header-button maximize"></div>
-                  <div className="Contato-Screen-header-button minimize"></div>
+        <div><div className="CadastroBackground">
+          <div className="CadastroContainer">
+            <div className="CadastroScreen">
+              <div className="Cadastro-Screen-header">
+                <div className="Cadastro-Screen-header-left">
+                  <div className="Cadastro-Screen-header-button close"></div>
+                  <div className="Cadastro-Screen-header-button maximize"></div>
+                  <div className="Cadastro-Screen-header-button minimize"></div>
                 </div>
-                <div className="Contato-Screen-header-right">
-                  <div className="Contato-Screen-header-ellipsis"></div>
-                  <div className="Contato-Screen-header-ellipsis"></div>
-                  <div className="Contato-Screen-header-ellipsis"></div>
+                <div className="Cadastro-Screen-header-right">
+                  <div className="Cadastro-Screen-header-ellipsis"></div>
+                  <div className="Cadastro-Screen-header-ellipsis"></div>
+                  <div className="Cadastro-Screen-header-ellipsis"></div>
                 </div>
               </div>
-              <div className="Contato-screen-body">
-                <div className="Contato-screen-body-item left">
-                  <div className="Contato-app-title">
+              <div className="Cadastro-screen-body">
+                <div className="Cadastro-screen-body-item left">
+                  <div className="Cadastro-app-title">
                     <span>Faça o</span>
                     <span>CADASTRO!</span>
                   </div>
@@ -81,46 +82,46 @@ const Cadastrese = () => {
                       <a href='https://www.instagram.com/'><FiInstagram className='icon' /> </a><br />
                       {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                     </div>
-                    <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
+                    <div className="Cadastro-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
                     <a href="./Login" className="nav-link text-dark btn font-weight-bold">Faça o login</a>
 
                   </div>
                 </div>
 
                 <form action="/login" method="post">
-                  <div className="Contato-screen-body-item">
-                    <div className="Contato-app-form">
-                      <div className="Contato-app-form-group">
-                        <input className="Contato-app-form-control" placeholder="UserName" name="username"></input>
+                  <div className="Cadastro-screen-body-item">
+                    <div className="Cadastro-app-form">
+                      <div className="Cadastro-app-form-group">
+                        <input className="Cadastro-app-form-control" placeholder="UserName" name="username"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="text" name="nome" className="Contato-app-form-control" placeholder="Nome"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="text" name="nome" className="Cadastro-app-form-control" placeholder="Nome"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="number" className="Contato-app-form-control" name="cpf" placeholder="CPF"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="number" className="Cadastro-app-form-control" name="cpf" placeholder="CPF"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="number" className="Contato-app-form-control" placeholder="Número do Nis" name="numnis"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="number" className="Cadastro-app-form-control" placeholder="Número do Nis" name="numnis"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="number" className="Contato-app-form-control" placeholder="Celular" name="celular"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="number" className="Cadastro-app-form-control" placeholder="Celular" name="celular"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="text" className="Contato-app-form-control" placeholder="Email" name="email"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="text" className="Cadastro-app-form-control" placeholder="Email" name="email"></input>
                       </div>
 
-                      <div className="Contato-app-form-group message">
-                        <input type="password" className="Contato-app-form-control" placeholder="Senha" name="senha"></input>
+                      <div className="Cadastro-app-form-group message">
+                        <input type="password" className="Cadastro-app-form-control" placeholder="Senha" name="senha"></input>
                       </div>
 
-                      <div className="Contato-app-form-group buttons">
-                        <button className="Contato-app-form-button">APAGAR</button>
-                        <button href="./MinhaConta" className="Contato-app-form-button">ENVIAR</button>
+                      <div className="Cadastro-app-form-group buttons">
+                        <button className="Cadastro-app-form-button">APAGAR</button>
+                        <button href="./MinhaConta" className="Cadastro-app-form-button">ENVIAR</button>
                       </div>
                     </div>
                   </div>

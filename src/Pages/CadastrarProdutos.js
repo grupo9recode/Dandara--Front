@@ -57,7 +57,7 @@ export default function CadastrarProdutos() {
     return (
         <>
             <Menu />
-            <div className='container'>
+            <div className='container1'>
                 <div class="registration-form">
                     <form action="/produtos" className="form-group" onSubmit={enviarDados}>
                         <div className="form-icon">

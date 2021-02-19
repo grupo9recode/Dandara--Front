@@ -1,6 +1,4 @@
-
- 
-import Menu from "../Componentes/Menu/Menu"
+import Menu from '../Componentes/Menu/Menu'
 import React from 'react'
 import './Css/Contato.css'
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
@@ -9,19 +7,17 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp} from 'react-icons/fi';
 
 const Contato = () => {
     return (
+      <>
+      <Menu /> 
         <div> 
            <div className="container container-fluid  d-flex mt-6 mb-6 contato">
             <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
-                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
-                    <div className="form-icon">
-                        <span><RiContactsBookUploadLine/></span>
-                    </div>
-                </div>
+                
                 </div>     
-<div><div className="ContatoBackground">
+<div><div className="ContatoBackgroundct">
      <div className="ContatoContainer">
        <div className="ContatoScreen">
-         <div className="Contato-Screen-header">
+         <div className="Contato-Screen-header1">
            <div className="Contato-Screen-header-left">
              <div className="Contato-Screen-header-button close"></div>
              <div className="Contato-Screen-header-button maximize"></div>
@@ -37,7 +33,7 @@ const Contato = () => {
            <div className="Contato-screen-body-item left">
              <div className="Contato-app-title">
                <span>Duvidas?</span>
-               <span>chama no zap!</span>
+               <span>Entre em contato</span>
              </div>
              <div id="alternativeLogin">
                    <div id="iconGroup">
@@ -75,6 +71,8 @@ const Contato = () => {
    </div>
     
                 </div>
-    )
-}
+           
+                 </>     
+          
+)}
 export default Contato;

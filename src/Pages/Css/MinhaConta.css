@@ -23,6 +23,11 @@
      margin: 0 auto;
  }*/
 
+ .containermc{
+     margin-left: 40px;
+     margin-top: 70px;
+ }
+
  .iconMinhaConta{
      width: 100px;
      height: 100px;

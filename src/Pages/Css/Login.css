@@ -25,7 +25,7 @@
 
 
 @media(max-width:780px){
-  .imagem-contato{
+  .imagem-Login{
     display: none;
   }
   .box-menu{
@@ -43,25 +43,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Contato-body, button, input {
+.Login-body, button, input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
 
-.ContatoBackground {
+.LoginBackgroundlg {
   display: flex;
   min-height: 100vh;
+  margin-top: -600px;
+  
+
+  
 }
 
-.ContatoContainer {
+.LoginContainer {
   
-margin-top: 0px;
+margin-top: 600px;
   padding: 5px;
   width: 100%;
+  margin-left: 70px;
 }
 
-.ContatoScreen {
+.LoginScreen {
   position: relative;
   background: linear-gradient(to top, #e451d0fa 10%, #e04949 100%);
   border-radius: 20px;
@@ -80,7 +85,7 @@ margin-top: 0px;
   z-index: -1;
 }
 
-.Contato-Screen-header {
+.Login-Screen-header {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -89,11 +94,11 @@ margin-top: 0px;
   border-top-right-radius: 15px;
 }
 
-.Contato-Screen-header-left {
+.Login-Screen-header-left {
   margin-right: auto;
 }
 
-.Contato-Screen-header-button {
+.Login-Screen-header-button {
   display: inline-flex;
   width: 20px;
   height: 10px;
@@ -103,35 +108,35 @@ margin-top: 0px;
 }
 
 
-.Contato-Screen-header-button.maximize {
+.Login-Screen-header-button.maximize {
   background: #aa4c34;
 }
 
-.Contato-Screen-header-button.minimize {
+.Login-Screen-header-button.minimize {
   background: #c5a64f;
 }
 
-.Contato-Screen-header-right {
+.Login-Screen-header-right {
   display: inline-block;
 }
 
 
 
-.Contato-screen-body {
+.Login-screen-body {
   display:flex;
 }
 
-.Contato-screen-body-item {
+.Login-screen-body-item {
   flex: 1;
   padding: 50px;
 }
 
-.Contato-screen-body-item.left {
+.Login-screen-body-item.left {
   display: flex;
   flex-direction: column;
 }
 
-.Contato-app-title {
+.Login-app-title {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -139,7 +144,7 @@ margin-top: 0px;
   font-size: 26px;
 }
 
-.Contato-app-title:after {
+.Login-app-title:after {
   content: '';
   display: block;
   position: absolute;
@@ -150,27 +155,27 @@ margin-top: 0px;
   background: #e0997d;
 }
 
-.Contato-app-contact {
+.Login-app-contact {
   margin-top: auto;
   font-size: 8px;
   color: rgb(211, 205, 205);
 }
 
-.Contato-app-form-group {
+.Login-app-form-group {
   margin-bottom: 15px;
 }
 
-.Contato-app-form-group.message {
+.Login-app-form-group.message {
   margin-top: 40px;
 }
 
-.Contato-app-form-group.buttons {
+.Login-app-form-group.buttons {
   margin-bottom: 0;
   text-align: right;
   margin: 5px;
 }
 
-.Contato-app-form-control {
+.Login-app-form-control {
   width: 100%;
   padding: 10px 0;
   background: none;
@@ -183,15 +188,15 @@ margin-top: 0px;
   transition: border-color .2s;
 }
 
-.Contato-app-form-control::placeholder {
+.Login-app-form-control::placeholder {
   color: rgb(190, 165, 165);
 }
 
-.Contato-app-form-control:focus {
+.Login-app-form-control:focus {
   border-bottom-color: #ddd;
 }
 
-.Contato-app-form-button {
+.Login-app-form-button {
   background: none;
   border: none;
   color: #e0997d;
@@ -201,7 +206,7 @@ margin-top: 0px;
   margin: 25px;
 }
 
-.Contato-app-form-button:hover {
+.Login-app-form-button:hover {
   color: #ebd5dd;
 }
 
@@ -210,29 +215,29 @@ margin-top: 0px;
     flex-direction: column;
   }
 
-  .Contato-screen-body-item.left {
+  .Login-screen-body-item.left {
     margin-bottom: 30px;
   }
 
-  .Contato-app-title {
+  .Login-app-title {
     flex-direction: row;
   }
 
-  .Contato-app-title span {
+  .Login-app-title span {
     margin-right: 12px;
   }
 
-  .Contato-app-title:after {
+  .Login-app-title:after {
     display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .Contato-screen-body {
+  .Login-screen-body {
     padding: 40px;
   }
 
-  .Contato-screen-body-item {
+  .Login-screen-body-item {
     padding: 0;
   }
 }

@@ -11,7 +11,7 @@ function RodapeGeral(){
 <div ClassName="ContatoCompleto">
      <div>
 <div  ClassName="contatotodo">
-    <div className="ContatoBackground">
+    <div className="ContatoBackgroundrp">
      <div className="ContatoContainer">
        <div className="ContatoScreen">
        

@@ -50,27 +50,27 @@ const Login = () => {
             
             
         <div> 
-           <div className="container container-fluid  d-flex mt-6 mb-6 contato">
-            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
+           <div className="container container-fluid  d-flex mt-6 mb-6 Login">
+            <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300" className='imagem-Login mr-5'/></a>
                   
-<div><div className="ContatoBackground">
-     <div className="ContatoContainer">
-       <div className="ContatoScreen">
-         <div className="Contato-Screen-header">
-           <div className="Contato-Screen-header-left">
-             <div className="Contato-Screen-header-button close"></div>
-             <div className="Contato-Screen-header-button maximize"></div>
-             <div className="Contato-Screen-header-button minimize"></div>
+<div><div className="LoginBackgroundlg">
+     <div className="LoginContainer">
+       <div className="LoginScreen">
+         <div className="Login-Screen-header">
+           <div className="Login-Screen-header-left">
+             <div className="Login-Screen-header-button close"></div>
+             <div className="Login-Screen-header-button maximize"></div>
+             <div className="Login-Screen-header-button minimize"></div>
            </div>
-           <div className="Contato-Screen-header-right">
-             <div className="Contato-Screen-header-ellipsis"></div>
-             <div className="Contato-Screen-header-ellipsis"></div>
-             <div className="Contato-Screen-header-ellipsis"></div>
+           <div className="Login-Screen-header-right">
+             <div className="Login-Screen-header-ellipsis"></div>
+             <div className="Login-Screen-header-ellipsis"></div>
+             <div className="Login-Screen-header-ellipsis"></div>
            </div>
          </div>
-         <div className="Contato-screen-body">
-           <div className="Contato-screen-body-item left">
-             <div className="Contato-app-title">
+         <div className="Login-screen-body">
+           <div className="Login-screen-body-item left">
+             <div className="Login-app-title">
                <span>Faça o</span>
                <span>Login!</span>
              </div>
@@ -80,7 +80,7 @@ const Login = () => {
                     <a href='https://www.instagram.com/'><FiInstagram className='icon'/> </a><br/>
                     {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                 </div>
-                <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
+                <div className="Login-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
                 <a href="./RecuperarSenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
                             <a href="/Cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
                 </div>
@@ -89,18 +89,18 @@ const Login = () => {
    
 
            <form action="http://localhost:3050/usuarios/login" method="post">
-           <div className="Contato-screen-body-item">
-             <div className="Contato-app-form">
-               <div className="Contato-app-form-group">
-                 <input type="text" name="username" className="Contato-app-form-control" placeholder="Usuário"></input>
+           <div className="Login-screen-body-item">
+             <div className="Login-app-form">
+               <div className="Login-app-form-group">
+                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário"></input>
                </div>
-               <div className="Contato-app-form-group message">
-                <input type="password" className="Contato-app-form-control" name="senha" placeholder="Senha"></input>
+               <div className="Login-app-form-group message">
+                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha"></input>
                </div> 
                
-               <div className="Contato-app-form-group buttons">
-                 <button className="Contato-app-form-button">APAGAR</button>
-                 <button type="submit" href="/minhaconta" className="Contato-app-form-button">ENTRAR</button>
+               <div className="Login-app-form-group buttons">
+                 <button className="Login-app-form-button">APAGAR</button>
+                 <button type="submit" href="/minhaconta" className="Login-app-form-button">ENTRAR</button>
                </div>
              </div>
            </div>

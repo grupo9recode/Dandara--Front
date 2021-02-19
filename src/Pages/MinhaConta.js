@@ -10,7 +10,7 @@ const MinhaConta = () => {
         <>
             <MenuFechado />
 
-            <div className="container mb-5">
+            <div className="containermc mb-5">
                 <div className="row d-flex justify-content-center m-1">
                     <div className="col-md-10  mt-2 mb-4 pt-5">
                         <div className="row z-depth-3 boxPerfil">

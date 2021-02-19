@@ -12,12 +12,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .ContatoBackground {
+  .ContatoBackgroundrp {
     display: flex;
     min-height: 0px;
     background-color: #5a62d6;
-    margin-top: 20px;
-    margin-bottom: none;
+     margin-bottom: none;
     padding-bottom: 0%;
   }
   
