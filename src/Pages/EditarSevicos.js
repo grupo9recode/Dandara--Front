@@ -1,5 +1,5 @@
 import Menu from "../Componentes/Menu/Menu";
-import IndexProduto from '../Componentes/Produtos/IndexProdutos';
+import IndexEdit from '../Componentes/IndexEdit';
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
 import './Css/Produtos.css';
 import './Css/CardsProdutos.css';
@@ -9,13 +9,13 @@ import {BsFillCaretDownFill} from 'react-icons/bs';
 
 
 
-const Produtos = () => {
+const EditarServicos = () => {
 
     const [action, setAction] = React.useState('');
     
     React.useEffect(async()=>{
 
-        const url = await fetch('http://localhost:3050/produtos');    
+        const url = await fetch('http://localhost:3050/servicos/');    
         const urlResponse = await url.json();
 
         setAction(urlResponse);
@@ -63,7 +63,7 @@ const Produtos = () => {
                     
                     </ul>
                     <form className="d-flex ml-auto">
-                        <input className="form-control me-2 mr-4" type="search" placeholder="Pesquisar Produto" aria-label="Search" />
+                        <input className="form-control me-2 mr-4" type="search" placeholder="Pesquisar Servico" aria-label="Search" />
                         <button className="btn botaoBuscar" type="submit">Buscar</button>
                     </form>
                     </div>
@@ -79,7 +79,7 @@ const Produtos = () => {
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-11 col-xs-12 box-produto mb-5" id="">                     
-                        {action && action.map(mapear => <IndexProduto username={mapear.username} nome={mapear.nome} email={mapear.email} id={mapear._id} produto={mapear.produto} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}                       
+                        {action && action.map(mapear => <IndexEdit username={mapear.username} nome={mapear.nome} email={mapear.email} id={mapear._id} servico={mapear.servico} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}                       
                     </div>
                 </div>
             </div>
@@ -87,4 +87,4 @@ const Produtos = () => {
         </>
     )
 }
-export default Produtos;
+export default EditarServicos;

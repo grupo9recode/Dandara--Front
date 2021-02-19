@@ -5,7 +5,7 @@ import React from 'react'
 import './Css/Contato.css'
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 import {RiContactsBookUploadLine} from 'react-icons/ri'
-import { FiInstagram, FiFacebook } from 'react-icons/fi';
+import { FiInstagram, FiFacebook, AiOutlineWhatsApp} from 'react-icons/fi';
 
 const Contato = () => {
     return (
@@ -16,33 +16,8 @@ const Contato = () => {
                     <div className="form-icon">
                         <span><RiContactsBookUploadLine/></span>
                     </div>
-                <form action='' method='get' >
-                    <div className="mb-1">
-                        <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
-                        <input type="email" className="form-control" id="email" name="email" />
-                    </div>
-                    <div className="mb-1">
-                        <label for="senha" className="form-label text-dark font-weight-bold">EMAIL</label>
-                        <input type="password" className="form-control" id="senha" name="senha" />
-                    </div>
-                    <div className="mb-1 d-flex">
-                        <div className="form- text-dark font-weight-bold">
-                            <label for="mensagem">MENSAGEM</label>
-                            <textarea className="form-control" id="mensagem" name='mensagem' rows="5" cols="100"></textarea>
-                        </div> 
-                    </div>
-                        <div className="ml-auto mt-2">
-                            <button type="submit" className="btn botao text-white font-weight-bold">ENTRAR</button>
-                        </div>  
-                    </form>
-                    
                 </div>
-    </div>
-
-
-
-
-     
+                </div>     
 <div><div className="ContatoBackground">
      <div className="ContatoContainer">
        <div className="ContatoScreen">
@@ -68,7 +43,7 @@ const Contato = () => {
                    <div id="iconGroup">
                     <a href='https://www.facebook.com/'><FiFacebook className="icon" /> </a><br/>
                     <a href='https://www.instagram.com/'><FiInstagram className='icon'/> </a><br/>
-                    <a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>
+                    {/*<a href='https://web.whatsapp.com/'><AiOutlineWhatsApp className='icon'/> </a><br/>*/}
                 </div>
                 <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
                 </div>

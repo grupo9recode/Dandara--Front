@@ -6,7 +6,17 @@ import Autenticacao from '../../Autenticacao';
 const IndexServicos = (props) => {
     
     function deletar(){
-        alert("Deletado com sucesso!")
+        alert(`Serviço  deletado, por gentileza   recaregar  a pagina`)
+
+        fetch(`http://localhost:3050/admin/servicos/delete/${props.id}`, {
+            method: "DELETE",
+            enctype:'multipart/form-data',
+            headers: {
+                "Content-Type": "application/json"
+            }
+            //transforma em json para mandar pra api e api mandar pro banco
+                
+        })
     }
 
     return(
