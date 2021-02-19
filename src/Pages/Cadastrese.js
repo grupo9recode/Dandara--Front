@@ -7,7 +7,7 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp} from 'react-icons/fi';
 
 
 const Cadastrese = () => {
-    const url = "http://localhost:3005/Cadastrese";
+    const url = "http://localhost:3050/registro";
     const [form, setForm] = React.useState({
         
         id_usuario: "",
@@ -19,6 +19,7 @@ const Cadastrese = () => {
         senha: ""
     });
 
+    /*
     const [response, setResponse] = React.useState(null)
 
     function pegarInfo({ target }) {
@@ -45,7 +46,7 @@ const Cadastrese = () => {
             window.location.href='/login';
         }
     }
-
+*/
     return (
         <>
         
@@ -85,34 +86,36 @@ const Cadastrese = () => {
                             
                 </div>
            </div>
+
+           <form action="http://localhost:3050/usuarios/registro" method="post">
            <div className="Contato-screen-body-item">
              <div className="Contato-app-form">
                <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="UserName"></input>
+                 <input className="Contato-app-form-control" placeholder="UserName" name="username"></input>
                </div>
 
                <div className="Contato-app-form-group message">
-                <input type="Ttext" className="Contato-app-form-control" placeholder="Nome"></input>
+                <input type="text" name="nome" className="Contato-app-form-control" placeholder="Nome"></input>
                </div> 
 
                <div className="Contato-app-form-group message">
-                <input type="number" className="Contato-app-form-control" placeholder="CPF"></input>
+                <input type="number" className="Contato-app-form-control" name="cpf" placeholder="CPF"></input>
                </div> 
 
                <div className="Contato-app-form-group message">
-                <input type="number" className="Contato-app-form-control" placeholder="Número do Nis"></input>
+                <input type="number" className="Contato-app-form-control" placeholder="Número do Nis" name="numnis"></input>
                </div> 
 
                <div className="Contato-app-form-group message">
-                <input type="number" className="Contato-app-form-control" placeholder="Celular"></input>
+                <input type="number" className="Contato-app-form-control" placeholder="Celular" name="celular"></input>
                </div> 
                
                <div className="Contato-app-form-group message">
-                <input type="text" className="Contato-app-form-control" placeholder="Email"></input>
+                <input type="text" className="Contato-app-form-control" placeholder="Email" name="email"></input>
                </div> 
 
                <div className="Contato-app-form-group message">
-                <input type="password" className="Contato-app-form-control" placeholder="Senha"></input>
+                <input type="password" className="Contato-app-form-control" placeholder="Senha" name="senha"></input>
                </div> 
                
                <div className="Contato-app-form-group buttons">
@@ -121,6 +124,7 @@ const Cadastrese = () => {
                </div>
              </div>
            </div>
+           </form>
          </div>
        </div>
      
@@ -135,3 +139,22 @@ const Cadastrese = () => {
     )
 }
 export default Cadastrese;
+
+
+/*{{#each erros}}
+    {{texto}}
+{{else}}
+
+{{/each}}
+
+/*<form action="/usuarios/registro" method="post">
+    <label for="nome">Nome: </label>
+        <input type="text" name="nome" class="form-control" required>
+    <label for="email">Email:</label>   
+        <input type="email" name="email" class="form-control" required>
+    <label for="senha">Senha: </label>
+        <input type="password" name="senha" class="form-control" required>
+    <label for="senha2">Repita a sua senha: </label>
+        <input type="password" name="senha2" class="form-control" required>
+    <button type="submit" class="btn btn-sucess">Criar conta</button>
+</form>*/

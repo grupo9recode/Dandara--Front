@@ -1,7 +1,6 @@
 
 const Sair = () => {
-    localStorage.removeItem('key');
-    window.location.href='/';
+    window.location.href='http://localhost:3050/logout';
 };
 
 export default Sair;
