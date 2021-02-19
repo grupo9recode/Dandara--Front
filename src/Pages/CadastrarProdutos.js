@@ -6,7 +6,22 @@ import {BiStore} from 'react-icons/bi';
 
 export default function CadastrarProdutos() {
 
-    const url = "http://localhost:3005/cadastrarprodutos";
+   /* const Categoria = () => {
+
+        const [action, setAction] = React.useState('');
+        
+        React.useEffect(async()=>{
+    
+            const urli= await fetch('http://localhost:3050/admin/categorias');    
+            const urlResponse = await url.json();
+    
+            setAction(urlResponse);
+            console.log(actionz);
+        }, []);
+
+    }*/
+    
+    const url = "http://localhost:3050/admin/produtos/cad";
     const [form, setForm] = React.useState({
 
         username: "",
@@ -24,9 +39,11 @@ export default function CadastrarProdutos() {
         console.log({ [id]: value });
     }
 
+
     function enviarDados(event) {
-        fetch('http://localhost:3005/cadastrarprodutos', {
+        fetch('http://localhost:3050/admin/produtos/cad', {
             method: "POST",
+            enctype:'multipart/form-data',
             headers: {
                 "Content-Type": "application/json"
             },
@@ -54,6 +71,7 @@ export default function CadastrarProdutos() {
                             <label for="nome" className="form-label text-dark font-weight-bold">PRODUTOS</label>
                             <input type="text" className="form-control" id="produto" name="produto" placeholder="NOME DO PRODUTO" value={form.produto} onChange={pegarDados} />
                         </div>
+                
                         <div className="mb-3">
                             <label className="form-label text-dark font-weight-bold">CATEGORIA</label>
                             <select className="form-select-lg select form-control" name="categoria" id='categoria' value={form.categoria} onChange={pegarDados}>
@@ -66,12 +84,13 @@ export default function CadastrarProdutos() {
                                 <option valeu='salao'>Salão de beleza</option>
                                 <option valeu='servicos domesticos'>Serviços domésticos</option>
                                 <option valeu='transporte'>Transporte</option>
+                                <option valeu='teste'>teste</option>
                             </select>
                         </div>
                         <div className="mb-3">
                             <label className="form-label text-dark font-weight-bold">IMAGEM</label>
                             <div className="custom-file">
-                                <input type="file" className="custom-file-input" id="validatedCustomFile" />
+                                <input type="file" name= "file" className="custom-file-input" id="validatedCustomFile" />
                                 <label className="custom-file-label" for="validatedCustomFile">Escolha o arquivo</label>
                                 <div className="invalid-feedback">Example invalid custom file feedback</div>
                             </div>
