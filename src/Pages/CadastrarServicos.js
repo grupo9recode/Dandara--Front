@@ -32,7 +32,7 @@ export default function CadastrarServicos() {
         console.log({...form, [id]: value })
     }
     function handleSubmit(event) {
-        fetch("http://localhost:3005/cadastrarservicos", {
+        fetch("http://localhost:3050/cadastrarservicos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -74,14 +74,14 @@ export default function CadastrarServicos() {
                                 <option valeu='Salão de Beleza'>Salão de Beleza</option>
                             </select>
                         </div>
-                        <div className="mb-3">
+                        {/*<div className="mb-3">
                             <label className="form-label text-dark font-weight-bold">IMAGEM</label>
                             <div className="custom-file">
                                 <input type="file" className="custom-file-input" id="validatedCustomFile" />
                                 <label className="custom-file-label" for="validatedCustomFile">Escolha o arquivo</label>
                                 <div className="invalid-feedback">Example invalid custom file feedback</div>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="mb-3">
                             <div className="input-group mb-3">
                                 <input type="text" name="valor" id="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={handleChange} />

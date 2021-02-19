@@ -14,7 +14,7 @@ const Login = () => {
     
     React.useEffect(async()=>{
 
-        const url = await fetch('http://localhost:3005/login');    
+        const url = await fetch('http://localhost:3050/usuarios/login');    
         const urlResponse = await url.json();
         
         console.log(JSON.stringify(urlResponse));
@@ -23,7 +23,7 @@ const Login = () => {
 
     }, []);
     
-    console.log(action[0])
+    /*console.log(action[0])
     let validacao = action.filter(item => item.email == document.getElementById("email").value)
         console.log(validacao)
     
@@ -43,7 +43,7 @@ const Login = () => {
     }
     if (localStorage.getItem('key')) {
         window.location='/minhaconta'
-    }
+    }*/
     return (
         <>
             <Menu/>
@@ -85,22 +85,26 @@ const Login = () => {
                             <a href="/Cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
                 </div>
            </div>
+           
+           <form action="http://localhost:3050/usuarios/login" method="post">
            <div className="Contato-screen-body-item">
              <div className="Contato-app-form">
                <div className="Contato-app-form-group">
-                 <input className="Contato-app-form-control" placeholder="E-mail"></input>
+                 <input type="text" name="username" className="Contato-app-form-control" placeholder="Usuário"></input>
                </div>
                <div className="Contato-app-form-group message">
-                <input type="password" className="Contato-app-form-control" placeholder="Senha"></input>
+                <input type="password" className="Contato-app-form-control" name="senha" placeholder="Senha"></input>
                </div> 
                
                <div className="Contato-app-form-group buttons">
-                 <button  onClick={validar}className="Contato-app-form-button">APAGAR</button>
-                 <button href="./MinhaConta" onClick={validar} className="Contato-app-form-button">ENVIAR</button>
+                 <button className="Contato-app-form-button">APAGAR</button>
+                 <button type="submit" href="/minhaconta" className="Contato-app-form-button">ENTRAR</button>
                </div>
              </div>
            </div>
+        </form>
          </div>
+         
        </div>
      
        </div>

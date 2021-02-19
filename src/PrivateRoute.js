@@ -1,4 +1,4 @@
-import {Route, Redirect } from 'react-router-dom'
+/*import {Route, Redirect } from 'react-router-dom'
 import React from 'react'
 import Autenticacao from './Autenticacao'
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -11,4 +11,4 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
     }
     />
 );
-export default PrivateRoute;
+export default PrivateRoute;*/
