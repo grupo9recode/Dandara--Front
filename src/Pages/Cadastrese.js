@@ -1,4 +1,4 @@
-import Menu from "../Componentes/Menu/Menu";
+import MenuAberto from "../Componentes/Menu/MenuAberto";
 import React from 'react';
 import { BiBriefcase } from 'react-icons/bi';
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
@@ -50,7 +50,7 @@ const Cadastrese = () => {
   return (
     <>
 
-      <Menu />
+      <MenuAberto />
       <div>
 
 
