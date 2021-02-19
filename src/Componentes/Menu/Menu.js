@@ -11,7 +11,7 @@ const Menu = () => {
     return (
         
         <>
-            {  MenuFechado() 
+            {  Autenticacao() ? MenuFechado() : MenuAberto()
             } 
             
         </>    
