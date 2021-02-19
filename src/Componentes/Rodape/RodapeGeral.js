@@ -8,28 +8,34 @@ import {RiContactsBookUploadLine} from 'react-icons/ri';
 
 function RodapeGeral(){
     return (           
-<div>
-<div>
+<div ClassName="ContatoCompleto">
+     <div>
+<div  ClassName="contatotodo">
     <div className="ContatoBackground">
      <div className="ContatoContainer">
        <div className="ContatoScreen">
+       
          <div className="Contato-Screen-header">
            <div className="Contato-Screen-header-left">
              <div className="Contato-Screen-header-button close"></div>
              <div className="Contato-Screen-header-button maximize"></div>
              <div className="Contato-Screen-header-button minimize"></div>
            </div>
+           
            <div className="Contato-Screen-header-right">
+             
              <div className="Contato-Screen-header-ellipsis"></div>
              <div className="Contato-Screen-header-ellipsis"></div>
              <div className="Contato-Screen-header-ellipsis"></div>
            </div>
          </div>
+<div>             <div> <a><img src={require('../../Imagens/contatinho.png').default} className="Imgcontato" alt="contato-img" width="50%"/></a> </div>                       
          <div className="Contato-screen-body">
+           
            <div className="Contato-screen-body-item left">
              <div className="Contato-app-title">
                <span>Duvidas?</span>
-               <span></span>
+               
                <div id="alternativeLogin">
                    <div id="iconGroup">
                     <a href='https://www.facebook.com/'><FiFacebook className="icon" /> </a><br/>
@@ -40,7 +46,8 @@ function RodapeGeral(){
              
                 <div className="Contato-app-contact">Desenvolvido graças ao RecodePro (2020)</div>
                 </div>
-           </div>
+                </div>
+                 
            <div className="Contato-screen-body-item">
              <div className="Contato-app-form">
                <div className="Contato-app-form-group">
@@ -58,13 +65,14 @@ function RodapeGeral(){
                </div>
              </div>
            </div>
+           </div>
         </div>
         </div>
         </div>
         </div>
         </div>    
 </div>
-
+</div>
    )
 }
 export default RodapeGeral;
