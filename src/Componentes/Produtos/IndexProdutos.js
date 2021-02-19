@@ -2,18 +2,40 @@ import './IndexProdutos.css';
 import React from 'react';
 import { BsInfoCircleFill } from "react-icons/bs";
 import Autenticacao from '../../Autenticacao';
+import { MdHttp } from 'react-icons/md';
 
 const IndexProduto = (props)=>{
+    
+    
+    function deletar (event) {
+       
+        alert(`Produto  deletado  recaregar a pagina`)
 
-    function deletar(){
-        alert("Deletado com sucesso!")
+        fetch(`http://localhost:3050/admin/produtos/delete/${props.id}`, {
+            method: "DELETE",
+            enctype:'multipart/form-data',
+            headers: {
+                "Content-Type": "application/json"
+            }
+            //transforma em json para mandar pra api e api mandar pro banco
+                
+        })
+           
+        
     }
+    
+    
+    
+    /*function deletar(){
+        alert("Deletado com sucesso!")
+       
+    }*/
     return(
         <>         
                     <div className="card">
-                        <div className="imgBox">
-                            <img className="img-img" src={require(`../../Imagens/Produtos/${props.imagem}`).default} />
-                        </div>
+                        {/*<div className="imgBox">
+                            //<img className="img-img" src={require(`../../Imagens/Produtos/${props.imagem}`).default} />
+                           </div>*/}
                         <div className="details">
                             <div className="text-content">
                                 <h3 className="textH3">{props.produto}</h3>
@@ -23,7 +45,7 @@ const IndexProduto = (props)=>{
                             <h4 className="textH4">Para mais informações, clique no círculo do card.</h4>
 
                             <div className='container container-fluid d-flex justify-content-around'>
-                            {Autenticacao() ? <button className='btnServicoDeletar ' onClick={deletar}>Deletar</button> : <></>}
+                            {Autenticacao() ? <button className= "btnServicoDeletar" type="submit"  onClick={deletar}>Deletar</button>: <></>}
 
                         <button className="btnProduto" type="button">Contato</button>
                     </div>
